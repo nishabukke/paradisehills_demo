@@ -32,7 +32,7 @@ $(".whypara-footer-nav").click(function() {
 
 $(".project-footer-nav").click(function() {
     $('html, body').animate({
-        scrollTop: $(".content-header").offset().top
+        scrollTop: $(".project-level-container").offset().top
     }, 1000);
 });
 

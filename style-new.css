@@ -1,0 +1,623 @@
+@font-face {
+    font-family: montserrat;
+    src: url(montserrat.regular.ttf);
+  }
+
+@font-face {
+    font-family: montserrat-heading;
+    src: url(montserrat.bold.ttf);
+}
+
+html, body {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+h3, h4, .p1, .p2, .about-heading{
+    font-family: montserrat-heading;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.header-banner-container {
+    background-image: url('assets/sky_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+}
+
+.black-line {
+    background-color: #016893;
+    text-align: right;
+    padding: 5px 50px;
+}
+
+.black-line a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: -20px;
+}
+
+.left-header img {
+    width: 100px;
+}
+
+.right-header a {
+    color: #003333;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.right-header a:hover {
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.banner-form-mobile{
+    display: none;
+}
+
+.banner-form{
+    width: 270px;
+    position: absolute;
+    right: 35px;
+    bottom: 0px;
+    background: #fff;
+    border: 1.5px solid #cccccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+}
+
+.banner-form label{
+    color: #003333;
+    font-size: 14px;
+    margin: 0;
+}
+
+.banner-form input {
+    font-size: 12px;
+}
+
+.banner-form input::placeholder{
+    color: #000;
+    font-size: 10px;
+}
+
+.banner-btn{
+    background-color: #003333;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.banner-btn:hover{
+    background-color: #0b4f4f;
+    color: #fff;
+}
+
+.banner-div {
+    padding: 60px 0 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.banner-heading {
+    color: #003333;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.paradise-logo {
+    width: 100px;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+    padding: 50px;
+}
+
+.aboutUs-left {
+    padding-right: 90px;
+}
+
+.aboutUs-head {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0e87ca;
+}
+
+.aboutUs-para {
+    font-size: 21px;
+    line-height: 27px;
+    color: #003333;
+}
+
+.aboutus-banner {
+    width: 100%;
+}
+
+.project-level-container{
+    padding: 80px 50px;
+}
+
+.content-header h3{
+    font-size: 42px;
+}
+
+.content-cards{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.content-cards1, .content-cards2{
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    border: none;
+}
+
+.card img{
+    width: 70px;
+    margin: 0px auto;
+}
+
+.card-title{
+    margin: 0;
+    font-size: 16px;
+}
+
+.card-text{
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+
+.strategies {
+    margin-top: 50px;
+    padding: 40px 150px;
+    background-image: url(assets/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.strategy-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.strategy-details div {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.strategy-details div i{
+    background: #003333;
+    border-radius: 50%;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.strategy-details p{
+    margin: 0;
+}
+
+.p-content{
+    font-size: 14px;
+}
+
+.p-heading{
+    font-weight: 600;
+}
+
+.contact-form{
+    width: 35%;
+}
+
+/* input:focus::placeholder, textarea:focus::placeholder{
+    opacity: 0.5;
+} */
+
+input, textarea {
+    &:focus::-webkit-input-placeholder  {
+          transition: opacity 0.5s 0.5s ease!important;
+         opacity: 0.5;
+    }
+  }
+
+
+.contact-details{
+    width: 30%;
+}
+
+.contact{
+    margin-top: 80px;
+}
+
+.contact hr{
+    position: absolute;
+    width: 100px;
+    border: 2px solid #003333;
+    top: 32px;
+    left: 350px;
+    opacity: 0.7;
+}
+
+.contact-form .btn{
+    background-color: #003333;
+    color: #fff;
+}
+
+.contact-heading{
+    font-size: 42px;
+}
+
+.icon{
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    width: 50px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-image: url(assets/sky_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50px;
+    padding: 250px 0 100px;
+}
+
+.footer .features-footer div{
+    font-size: 14px;
+    color: #444;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 60px;
+}
+
+.features-footer div{
+    cursor: pointer;
+}
+
+.footer .copyright-footer{
+    color: #fff;
+    background-color: rgba(11, 79, 79, 0.8);
+    font-size: 12px;
+    padding: 5px 15px;
+}
+
+
+
+/* back to top */
+
+
+#scroll {
+    z-index: 1;
+    position:fixed;
+    right:30px;
+    bottom: 30px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#003333;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#0b4f4f;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+@media screen and (max-width:768px) {
+    .left-header img {
+        width: 70px;
+    }
+
+    .right-header a {
+        font-size: 14px;
+    }
+
+    .main-header {
+        margin-top: -10px;
+    }
+
+    .banner-div {
+        padding: 60px 0 185px;
+    }
+
+    .banner-heading {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .paradise-logo {
+        width: 70px;
+    }
+
+    .banner-form {
+        width: 230px;
+        padding: 20px;
+        display: none;
+    }
+
+    .about-us {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .aboutUs-left {
+        padding-right: 0px;
+    }
+
+    .aboutUs-head {
+        font-size: 30px;
+    }
+
+    .aboutUs-para {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .strategies {
+        margin-top: 50px;
+        padding: 82px 150px;
+    }
+
+    .strategy-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-content.d-flex.justify-content-around.align-items-center {
+        flex-direction: column;
+    }
+
+    .content-cards1, .content-cards2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text{
+    font-size: 16px;
+    }
+
+    .contact-form, .contact-details {
+        width: 80%;
+    }
+
+    .banner-form-mobile{
+        width: max-content;
+        display: flex;
+        margin: 0px auto;
+        background: rgba(14, 135, 202,0.5);
+        padding: 20px 30px;
+        border-radius: 10px;
+        display: block;
+    }
+    
+    .enquiry-title{
+        text-align: center;
+        margin: 0;
+        color: #fff;
+    }
+
+    .form-label-mobile{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .banner-form-mobile input::placeholder{
+        font-size: 12px;
+    }
+
+    .content-header h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:320px){
+
+    .black-line a {
+        font-size: 12px;
+    }
+
+    .main-header {
+        margin-top: -15px;
+    }
+
+    .left-header img {
+        width: 50px;
+    }
+
+    .right-header a {
+        font-size: 12px;
+    }
+
+    .enquiry-title {
+        font-size: 15px;
+    }
+
+    .form-label-mobile {
+        font-size: 12px;
+    }
+
+    .aboutUs-head {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .content-header h3 {
+        font-size: 25px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .strategy-details div {
+        padding: 10px 5px;
+    }
+
+    .strategy-details div i {
+        font-size: 10px;
+    }
+
+    .p-heading {
+        font-size: 13px;
+    }
+
+    .p-content {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .contact-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact-form input::placeholder{
+        font-size: 12px;
+    }
+
+    .contact-form .btn {
+        display: flex;
+        width: max-content;
+        margin: 0px auto;
+        font-size: 12px;
+    }
+    
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .detail{
+        font-size: 13px;
+    }
+
+    .footer .features-footer div {
+        font-size: 11px;
+    }
+    
+
+    #scroll{
+        width: 35px;
+        height: 35px;
+    }
+    .aboutUs-para {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .aboutUs-left {
+        padding-right: 25px;
+    }
+
+    .aboutUs-head {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .aboutUs-para {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .card-body {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .strategies h3{
+        font-size: 25px;
+    }
+
+    .p-content {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contact-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact-form .btn {
+        display: flex;
+        width: max-content;
+        margin: 0px auto;
+        font-size: 14px;
+    }
+
+    .icon {
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        padding: 10px 15px;
+    }
+}
