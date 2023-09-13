@@ -363,6 +363,55 @@ input, textarea {
     -ms-filter:"alpha(opacity=100)";
 }
 
+
+/* @media screen and (max-width:1024px) {
+    .aboutUs-left {
+        padding-right: 25px;
+    }
+
+    .aboutUs-head {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .aboutUs-para {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .card-body {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .strategies h3{
+        font-size: 25px;
+    }
+
+    .p-content {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contact-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact-form .btn {
+        display: flex;
+        width: max-content;
+        margin: 0px auto;
+        font-size: 14px;
+    }
+
+    .icon {
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        padding: 10px 15px;
+    }
+} */
+
 @media screen and (max-width:768px) {
     .left-header img {
         width: 70px;
@@ -571,53 +620,5 @@ input, textarea {
     .aboutUs-para {
         font-size: 12px;
         line-height: 22px;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .aboutUs-left {
-        padding-right: 25px;
-    }
-
-    .aboutUs-head {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .aboutUs-para {
-        font-size: 19px;
-        line-height: 23px;
-    }
-
-    .card-body {
-        padding: 0;
-        margin-top: 10px;
-    }
-
-    .strategies h3{
-        font-size: 25px;
-    }
-
-    .p-content {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .contact-heading {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .contact-form .btn {
-        display: flex;
-        width: max-content;
-        margin: 0px auto;
-        font-size: 14px;
-    }
-
-    .icon {
-        border: 2px solid #cccccc;
-        border-radius: 50%;
-        padding: 10px 15px;
     }
 }
